@@ -1,0 +1,413 @@
+/* Definindo as cores tema */
+:root {
+  --cor-preto1: rgb(39, 39, 39);
+  --cor-preto2: #2d2d2d;
+  --cor-preto3: #414141;
+  --cor-preto4: #1c1c1c;
+  --cor-preto5: #343434;
+  --cor-branco: #ffffff;
+  --cor-amarelo: rgb(219, 124, 14);
+}
+
+/* Definindo fontes */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Definindo estilos para o body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--cor-preto1);
+  color: var(--cor-branco);
+}
+
+/* Definindo estilos para o header */
+.header-nav,
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+.header-nav {
+  justify-content: space-between;
+  box-shadow: 1px 1px 4px var(--cor-preto4);
+  background-color: var(--cor-preto2);
+}
+.nav {
+  gap: 3em;
+  z-index: 2;
+}
+
+/*
+.header-nav {
+  margin-top: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+ 
+  border: none;
+  box-shadow: 1px 4px 14px var(--cor-preto4);
+}
+*/
+
+.header-bacground img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: -1.4%;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin-right: 1rem;
+}
+
+.nav a {
+  color: var(--cor-branco);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: var(--cor-amarelo);
+}
+.btn_Sidebar {
+  background: transparent;
+  border: none;
+  color: var(--cor-branco);
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    background: var(--cor-preto3);
+    height: auto;
+    width: 300px;
+    padding: 1em;
+    border-radius: 8px;
+    animation-duration: 1s;
+    margin-left: -100vw;
+  }
+  .nav ul {
+    flex-direction: column;
+    align-items: first baseline;
+  }
+  .nav ul li {
+    justify-content: space-between;
+    padding: 5px;
+  }
+  .btn_Sidebar {
+    display: block;
+  }
+}
+@keyframes showSidebar {
+  from {
+    margin-left: -150vw;
+  }
+  to {
+    margin-left: -10vw;
+  }
+}
+
+/* Estilos para o main */
+.main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  transition: 1s;
+}
+
+/* Estilos para o footer */
+footer {
+  background-color: var(--cor-preto3);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--cor-branco);
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+footer a:hover {
+  color: var(--cor-amarelo);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a {
+  color: var(--cor-branco);
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Estilos para o formulário de pesquisa */
+form {
+  display: flex;
+  align-items: center;
+}
+
+.but:hover {
+  background-color: var(--cor-branco);
+}
+
+.caix {
+  padding: 0.5rem 2rem;
+  border: none;
+  margin-right: 0.5rem;
+  border-radius: 30px;
+}
+
+.but {
+  width: 25px;
+  height: 25px;
+  background-image: url("seach.png");
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.95rem;
+}
+#btn_close {
+  width: 25px;
+  padding: 1rem;
+  height: 25px;
+  background-image: url("https://img.freepik.com/icones-gratis/ossos-cruzados_318-924169.jpg");
+  background-color: transparent;
+  background-size: contain;
+}
+
+/* Estilos para a seccao anime */
+
+div.galeria {
+  margin: 2%;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+  background-color: var(--cor-preto2);
+  color: var(--cor-branco);
+  box-shadow: 10px 10px 1px var(--cor-preto4);
+  
+}
+
+div.galeria:hover {
+  border: 1px solid #777;
+}
+
+.eps h1 {
+  background-color: var(--cor-preto2);
+  padding: 10px;
+  border-bottom: 0.5px solid var(--cor-branco);
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.galeria img {
+  width: 100%;
+  height: 150px;
+}
+
+section.inf {
+  align-items: end;
+  clear: both;
+}
+
+/* ESTILOS PARA seccao sinopse*/
+
+.titulo {
+  display: flex;
+  justify-content: center; /* centraliza o texto horizontalmente */
+  align-items: center; /* centraliza as linhas verticalmente */
+  margin: 30px 0; /* 30px -> margens superior e inferior */
+}
+
+.titulo::before,
+.titulo::after {
+  content: "";
+  position: relative;
+  height: 1px; /* espessura das linhas */
+  background: #666; /* cor das linhas */
+  min-width: 50px; /* largura mínima das linhas */
+  flex-grow: 1; /* distribui a largura das linhas por igual */
+}
+
+.titulo {
+  color: #fff; /* cor do texto */
+  padding: 0 15px; /* distancia do texto às linhas */
+  font-weight: bold; /* negrito */
+  font-size: 2em; /* tamanho do texto */
+}
+.sipnose,
+.curiosidades {
+  margin-left: 4%;
+  margin-right: 4%;
+  border: 1px solid #ffffff81;
+  background-color: #cccccc15;
+  padding: 20px;
+  box-shadow: 10px 10px 1px var(--cor-preto4);
+}
+
+.curiosidades li,
+.sipnose p {
+  text-align: justify;
+  text-decoration: dotted;
+  font-style: italic;
+  font-family: "Segoe UI", Verdana;
+  justify-content: space-between;
+}
+
+.curiosidades li {
+  padding: 10px;
+}
+
+.curiosidades {
+  align-items: end;
+  clear: both;
+}
+.sipnose {
+  display: flex;
+  flex-direction: row;
+}
+
+.imfor p {
+  padding: 5%;
+}
+.sipnose img {
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  box-shadow: 1px 1px 2px rgba(197, 209, 209, 0.411);
+  border: 5px solid rgb(255, 253, 249);
+}
+@media only screen and (max-width: 768px) {
+  .sipnose {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+  }
+}
+
+/* Estilos para a seccao Manga */
+/* Estilos para a seccao Manga */
+.vol {
+  float: left;
+  padding-right: 90px;
+  margin: 10px;
+  background-image: url("./capa_manga.png");
+  background-size: 10rem;
+  background-repeat: no-repeat;
+  height: 14rem;
+  box-shadow: 10px 5px 3px var(--cor-branco);
+  border-end-end-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 3px;
+}
+.vol {
+  border: 1px solid var(--cor-branco);
+  box-shadow: 2px 2px px;
+}
+
+.desc-manga {
+  float: left;
+  margin: 2px;
+  margin-top: 90px;
+  width: 4rem;
+  background-color: rgb(216, 25, 25);
+  color: var(--cor-branco);
+}
+
+#ova {
+  align-items: end;
+  clear: both;
+}
+
+/* SEcao abaute me*/
+.about-me {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-me h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-me img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.about-me p {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.about-me {
+  border: 1px solid var(--cor-branco);
+  box-shadow: 2px 2px px;
+}
+.desc-about-me {
+  text-align: justify;
+  text-decoration: dotted;
+  font-style: italic;
+  font-family: "Segoe UI", Verdana;
+  justify-content: space-between;
+  padding: 2pc;
+}
+
+.home {
+  /* The image used */
+  background-image: url("https://i.redd.it/n8uaysd3icq81.gif");
+
+  /* Full height */
+  height: 25rem;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-b {
+  width: 40%;
+  background-repeat: no-repeat;
+  height: 4rem;
+  align-items: center;
+  background-color: #e8edf53b;
+  box-shadow: 1px 1px 2px var(--cor-branco);
+  opacity: 0.5;
+}
+.home-b a {
+  color: var(--cor-amarelo);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 200%;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

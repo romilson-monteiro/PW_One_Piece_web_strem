@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Blue</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
+
+    <!--
+      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+      <script>
+         $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+         });
+      </script>
+    -->
+  </head>
+  <body>
+    <header>
+      <div class="header-bacground">
+        <img src="./2bac.png" alt="header-bacground" />
+      </div>
+      <div class="header-nav" id="header-nav">
+        <button onclick="toggleSidebar()" class="btn_Sidebar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div class="logo">
+          <a href="./home.html">
+            <img src="./All_Blue-icone.png" alt="All Blue" height="60px" />
+          </a>
+        </div>
+        <nav class="nav" id="nav">
+          <button
+            id="btn_close"
+            onclick="toggleSidebar()"
+            class="btn_Sidebar"
+          ></button>
+          <ul>
+            <li> <a href="./home.html">Home</a></li>
+            <li><a href="./anime.html">Anime</a></li>
+            <li><a href="./manga.html">Manga</a></li>
+            <li><a href="./ovas.html">OVAs & Film</a></li>
+            <li><a href="./sobreNos.html">About me</a></li>
+          </ul>
+
+          <form>
+            <input class="caix" type="search" placeholder="Pesquisar..." />
+            <button class="but" type="submit"></button>
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <main tabindex="0" class="main" onfocus="closeSidebar()" id="main">
+      <section class="sipnose">
+        <img
+          src="https://e0.pxfuel.com/wallpapers/532/642/desktop-wallpaper-i-did-a-one-piece-collage-with-over-800-of-my-favorite-manga-panels-2-years-ago-r-onepiece.jpg"
+          alt="wallpapers"
+        />
+
+        <div class="imfor">
+          <div class="titulo">
+            <span>Sinopse</span>
+          </div>
+          <p>
+            One Piece é um mangá de aventura pirata escrito e desenhado por
+            Eiichiro Oda, que mistura temas coloridos e criativos retirados da
+            mitologia clássica, política e música com a tradição pirata e a
+            fórmula shonen. Com mais de 1065 capítulos e 105 volumes, One Piece
+            é o mangá mais popular do Japão e a história em quadrinhos de um
+            único autor mais vendida do mundo, tendo gerado uma grande franquia
+            de anime, filmes e mercadorias.
+          </p>
+        </div>
+      </section>
+      <section class="eps">
+        <br /><br /><br />
+        <h1>Todos os Volumes:</h1>
+
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 0</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 1</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 2</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 3</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 4</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 5</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 6</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 7</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="galeria-manga" id="galeria-manga">
+              <div class="desc-manga">VOL 8</div>
+            </div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="galeria-manga" id="galeria-manga">
+              <div class="desc-manga">VOL 9</div>
+            </div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 10</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 11</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 12</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 13</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 14</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 15</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 16</div>
+          </a>
+        </div>
+         <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 17</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 18</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 19</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 20</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 21</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 22</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 23</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 24</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 25</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 26</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 27</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 28</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 29</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 30</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 31 ao 99</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 100</div>
+          </a>
+        </div>
+        
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 101</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 102</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 103</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 104</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 105</div>
+          </a>
+        </div>
+        <div class="vol">
+          <a href="./ep.html">
+            <div class="desc-manga">VOL 106</div>
+          </a>
+        </div>
+       
+      </section>
+      <br />
+      <!--<section class="inf">
+        <h2>Informações da Empresa de Animação</h2>
+        <p>
+          A One Piece é produzida pela Toei Animation, uma empresa de animação
+          japonesa fundada em 1948.
+        </p>
+        <p>
+          A Toei Animation já produziu outras séries populares de anime, como
+          Dragon Ball, Sailor Moon e Digimon.
+        </p>
+        <p>
+          A empresa também é conhecida por seus trabalhos em animação para
+          filmes e programas de TV, bem como em merchandising e produção de
+          música.
+        </p>
+      </section>
+      -->
+      <section class="curiosidades">
+        <span>
+          <div class="titulo">
+            <span> Curiosidades</span>
+          </div>
+        </span>
+
+        <ul>
+          <li>
+            O mangá de One Piece é escrito e ilustrado por Eiichiro Oda e
+            começou a ser publicado na Weekly Shonen Jump em 1997.
+          </li>
+          <li>
+            One Piece é atualmente o mangá mais vendido de todos os tempos, com
+            mais de 480 milhões de cópias vendidas em todo o mundo.
+          </li>
+          <li>
+            Oda afirma que já escreveu cerca de 80% da história de One Piece e
+            que pretende terminá-la em cerca de cinco anos.
+          </li>
+    
+        </ul>
+        <br />
+      </section>
+    </main>
+    <footer>
+      <p>&copy;ALLBLUE-Todos os direitos reservados</p>
+      <p>
+        Desenvolvedor - Romilson Monteiro
+        <a href="./sobreNos.html">Mais sobre min</a>
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

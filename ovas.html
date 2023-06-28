@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Blue</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
+
+    <!--
+      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+      <script>
+         $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+         });
+      </script>
+    -->
+  </head>
+  <body>
+  <header>
+      <div class="header-bacground">
+        <img src="./2bac.png" alt="header-bacground" />
+      </div>
+      <div class="header-nav" id="header-nav">
+        <button onclick="toggleSidebar()" class="btn_Sidebar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div class="logo">
+          <a href="./home.html">
+            <img src="./All_Blue-icone.png" alt="All Blue" height="60px" />
+          </a>
+        </div>
+        <nav class="nav" id="nav">
+          <button
+            id="btn_close"
+            onclick="toggleSidebar()"
+            class="btn_Sidebar"
+          ></button>
+          <ul>
+            <li> <a href="./home.html">Home</a></li>
+            <li><a href="./anime.html">Anime</a></li>
+            <li><a href="./manga.html">Manga</a></li>
+            <li><a href="./ovas.html">OVAs & Film</a></li>
+            <li><a href="./sobreNos.html">About me</a></li>
+          </ul>
+
+          <form>
+            <input class="caix" type="search" placeholder="Pesquisar..." />
+            <button class="but" type="submit"></button>
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <main tabindex="0" class="main" onfocus="closeSidebar()" id="main">
+      <section class="sipnose">
+        <div class="fil">
+          <div class="titulo">
+            <span>Filmes e Ovas</span>
+          </div>
+          <p>
+            Aqui você encontrará todos os filmes e OVA's da franquia One Piece,
+            incluindo clássicos atemporais e lançamentos mais recentes. Além
+            disso, nossa seção de filmes e OVA's oferece a oportunidade de
+            mergulhar ainda mais fundo no universo incrível de One Piece e
+            acompanhar Monkey D. Luffy e sua tripulação em aventuras
+            emocionantes.
+          </p>
+        </div>
+      </section>
+      <section class="eps">
+        <br /><br /><br />
+        <h1>Todos os Filmes:</h1>
+        <div class="Ofilm"></div>
+        <div class="arco" id="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://www.themoviedb.org/t/p/original/635qI5pWhQSUaTnOkMo4GLCe8sV.jpg"
+                alt="O GRANDE PIRATA DO OURO"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                <br />
+                O GRANDE PIRATA DO OURO
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="arco" id="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://image.tmdb.org/t/p/original/6OnJoCqeRzoOdzXogm64OD3QGzn.jpg"
+                alt="A AVENTURA NA ILHA NEJIMAK"
+                width="600"
+                height="400"
+              />
+              <div class="desc"><br />A AVENTURA NA ILHA NEJIMAK</div>
+            </div>
+          </a>
+        </div>
+        <div class="arco" id="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://animesgames.net/wp-content/uploads/2021/04/one-piece-filme-4-aventura-mortal-anime-online.jpg"
+                alt="AVENTURA MORTAL"
+                width="600"
+                height="400"
+              />
+              <div class="desc"><br /><br />AVENTURA MORTAL</div>
+            </div>
+          </a>
+        </div>
+        <div class="arco" id="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://muramasa.com.br/wp-content/uploads/2022/07/onepiecefilm6.png"
+                alt="O BARÃO OMATSURI E A ILHA SECRETA"
+                width="600"
+                height="400"
+              />
+              <div class="desc">O BARÃO OMATSURI E A ILHA SECRETA</div>
+            </div>
+          </a>
+        </div>
+        <div class="arco" id="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://image.tmdb.org/t/p/w780/sS9nyPEJX5mNrbOUwkxnCShWOSZ.jpg"
+                alt="OS MECHAS DO CASTELO KARAKURI"
+                width="600"
+                height="400"
+              />
+              <div class="desc">OS MECHAS DO CASTELO KARAKURI</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://static.anime21.blog.br/2021/04/One_Piece_Ex_11_A_Perseguicao_ao_Chapeu_de_Palha_HD.mkv_snapshot_08.56_2021.04.05_11.38.08.jpg"
+                alt="PERSEGUIÇÃO AO CHAPÉU DE PALHA"
+                width="600"
+                height="400"
+              />
+              <div class="desc">A PERSEGUIÇÃO AO CHAPÉU DE PALHA</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://ultraverso.com.br/wp-content/uploads/2022/04/one-piece-z-1200x675-1.webp"
+                alt="FILME Z"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                <br />
+                ONE PIECE FILME Z
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://www.funimationfilms.com/wp-content/uploads/2016/10/new-heading.jpeg"
+                alt="ENIES LOBBY"
+                width="600"
+                height="400"
+              />
+              <div class="desc"><br />ONE PIECE FILME: GOLD</div>
+            </div>
+          </a>
+        </div>
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://miro.medium.com/max/1200/1*3sFa3LrQceDOBD275wqh2g.jpeg"
+                alt="THRILLER BARK"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                <br />
+                ONE PIECE: STAMPEDE
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://i0.wp.com/butwhytho.net/wp-content/uploads/2022/10/One-Piece-Film-Red-But-Why-Tho.jpg?fit=800%2C410&ssl=1"
+                alt="ARQUIPÉLAGO SABAODY"
+                width="600"
+                height="400"
+              />
+              <div class="desc"><br />ONE PIECE FILME: RED</div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="eps" id="ova">
+        <br /><br /><br />
+        <h1>Todas as Ovas:</h1>
+        <div class="arco" id="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://wisecafeeng.files.wordpress.com/2020/08/one-piece-defeat-the-pirate-ganzack-1998-ganzack-himself.png?w=623&h=349"
+                alt="DERROTE-O! O PIRATA GANZACK"
+                width="600"
+                height="400"
+              />
+              <div class="desc">DERROTE-O! O PIRATA GANZACK</div>
+            </div>
+          </a>
+        </div>
+        <div class="arco" id="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://ovicio.com.br/wp-content/uploads/2019/03/20190329-one-piece-romance-dawn-1164933-640x320-730x365.jpeg"
+                alt="ONE PIECE: ROMANCE DAWN"
+                width="600"
+                height="400"
+              />
+              <div class="desc">ONE PIECE: ROMANCE DAWN</div>
+            </div>
+          </a>
+        </div>
+        <div class="arco" id="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://simkl.in/fanart/11/11303030296e66333f_w.jpg"
+                alt="EPISÓDIO 0 STRONG WORLDL"
+                width="600"
+                height="400"
+              />
+              <div class="desc">EPISÓDIO 0 STRONG WORLDL</div>
+            </div>
+          </a>
+      </section>
+      <br />
+      <!--<section class="inf">
+        <h2>Informações da Empresa de Animação</h2>
+        <p>
+          A One Piece é produzida pela Toei Animation, uma empresa de animação
+          japonesa fundada em 1948.
+        </p>
+        <p>
+          A Toei Animation já produziu outras séries populares de anime, como
+          Dragon Ball, Sailor Moon e Digimon.
+        </p>
+        <p>
+          A empresa também é conhecida por seus trabalhos em animação para
+          filmes e programas de TV, bem como em merchandising e produção de
+          música.
+        </p>
+      </section>
+      -->
+      <section class="curiosidades">
+        <span>
+          <div class="titulo">
+            <span> Curiosidades</span>
+          </div>
+        </span>
+
+        <ul>
+          <ul>
+            <li>
+              Os filmes de One Piece são produzidos pela Toei Animation, a mesma
+              empresa que produz o anime.
+            </li>
+            <li>
+              O primeiro filme de One Piece, "One Piece: The Movie", foi lançado
+              em 2000.
+            </li>
+            <li>
+              O OVA "One Piece: Defeat Him! The Pirate Ganzack" foi produzido
+              antes do anime e foi a primeira animação de One Piece.
+            </li>
+            <li>
+              O filme "One Piece: Film Gold" arrecadou mais de 15 milhões de
+              dólares nas bilheterias japonesas.
+            </li>
+            <li>
+              O filme "One Piece: Stampede" apresenta mais de 40 personagens da
+              série, incluindo alguns que não aparecem no anime há anos.
+            </li>
+          </ul>
+        </ul>
+        <br />
+      </section>
+    </main>
+    <footer>
+      <p>&copy;ALLBLUE-Todos os direitos reservados</p>
+      <p>
+        Desenvolvedor - Romilson Monteiro
+        <a href="./sobreNos.html">Mais sobre min</a>
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

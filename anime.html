@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Blue</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
+
+    <!--
+      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+      <script>
+         $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+         });
+      </script>
+    -->
+  </head>
+  <body>
+    <header>
+      <div class="header-bacground">
+        <img src="./2bac.png" alt="header-bacground" />
+      </div>
+      <div class="header-nav" id="header-nav">
+        <button onclick="toggleSidebar()" class="btn_Sidebar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div class="logo">
+          <a href="./home.html">
+            <img src="./All_Blue-icone.png" alt="All Blue" height="60px" />
+          </a>
+        </div>
+        <nav class="nav" id="nav">
+          <button
+            id="btn_close"
+            onclick="toggleSidebar()"
+            class="btn_Sidebar"
+          ></button>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./anime.html">Anime</a></li>
+            <li><a href="./manga.html">Manga</a></li>
+            <li><a href="./ovas.html">OVAs & Film</a></li>
+            <li><a href="./sobreNos.html">About me</a></li>
+          </ul>
+
+          <form>
+            <input class="caix" type="search" placeholder="Pesquisar..." />
+            <button class="but" type="submit"></button>
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <main tabindex="0" class="main" onfocus="closeSidebar()" id="main">
+      <section class="sipnose">
+        <img
+          src="https://i.pinimg.com/736x/fd/f2/7d/fdf27da7aaff0f73002c239332eabc6a.jpg"
+          alt="wallpapers"
+        />
+
+        <div class="imfor">
+          <div class="titulo">
+            <span>Sinopse</span>
+          </div>
+          <p>
+            Gol D. Roger, o Rei dos Piratas, deixou uma mensagem enigmática
+            antes de ser executado, inspirando jovens aventureiros a procurar
+            seu tesouro lendário. Monkey D. Luffy parte em busca do One Piece
+            para realizar seu sonho de se tornar o Rei dos Piratas, enfrentando
+            inimigos poderosos no caminho e recrutando uma tripulação forte no
+            mar East Blue.
+          </p>
+        </div>
+      </section>
+      <section class="eps">
+        <br /><br /><br />
+        <h1>Todos os epsodios:</h1>
+
+        <div class="arco" id="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://lrmonline.com/wp-content/uploads/2020/09/one-piece-episode-of-east-blue-9125-1.jpg"
+                alt="EAST BLUE"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                EAST BLUE <br />
+                1 até 60
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://mixdeseries.com.br/wp-content/uploads/2022/03/One-Piece-serie-da-Netflix.jpg"
+                alt="ALABASTA"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                ALABASTA <br />
+                60 até 130
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://e1.pxfuel.com/desktop-wallpaper/388/663/desktop-wallpaper-one-piece-episode-of-skypiea-one-piece-anime-sky.jpg"
+                alt="SKYPIEA"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                SKYPIEA <br />
+                131 até 206
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://i.pinimg.com/736x/2d/28/24/2d2824845311147c84d0802f6bba9bc5.jpg"
+                alt="ENIES LOBBY"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                Water 7 <br />
+                207 até 325
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://e0.pxfuel.com/wallpapers/558/571/desktop-wallpaper-thriller-bark-pirates.jpg"
+                alt="THRILLER BARK"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                THRILLER BARK <br />
+                326 até 381
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://i.pinimg.com/originals/79/37/73/7937739c8f4c1d5efd19442b5a1c29e4.jpg"
+                alt="ARQUIPÉLAGO SABAODY"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                SABAODY <br />
+                382 até 421
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://i.pinimg.com/originals/81/37/ef/8137ef02c37e2a2b6c38517c26a0f27b.jpg"
+                alt="IMPEL DOWN"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                IMPEL DOWN <br />
+                422 até 456
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://e0.pxfuel.com/wallpapers/804/266/desktop-wallpaper-one-piece-marineford-arc.jpg"
+                alt="MARINEFORD"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                MARINEFORD <br />
+                457 até 492
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://pbs.twimg.com/media/FJLZGByXwAI4J4-.jpg:large"
+                alt="APÓS GUERRA"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                APÓS GUERRA <br />
+                493 até 516
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://pm1.narvii.com/7702/5906d66000ff665564d843ec1d49fb1abdba89c7r1-620-352v2_hq.jpg"
+                alt="ILHA DOS TRITÕES"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                ILHA DOS TRITÕES <br />
+                517 até 578
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://64.media.tumblr.com/1c0fef7decfe1bd69fc7b1e8c6659ed7/tumblr_inline_pj8kw4JURp1s2yta0_640.jpg"
+                alt="EAST BLUE"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                PUNK HAZARD <br />
+                579 ao 628
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://cdn.wallpapersafari.com/8/76/tJm2RX.jpg"
+                alt="DRESSROSA"
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                DRESSROSA <br />
+                629 até 746
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://i.ex-cdn.com/mgn.vn/files/content/2022/03/28/zushina-1-1031.jpg"
+                alt="ZOU "
+                width="600"
+                height="400"
+              />
+              <div class="desc">
+                ZOU <br />
+                747 ao 782
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://sportshub.cbsistatic.com/i/2021/03/16/7028544e-2bff-4691-9880-13bb03707ea1/whole-cake-banner-1086639.jpg"
+                alt="Forest"
+                width="650"
+                height="450"
+              />
+              <div class="desc">
+                WHOLE CAKE <br />
+                783 até 877
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="arco">
+          <a href="./ep.html">
+            <div class="galeria">
+              <img
+                src="https://e0.pxfuel.com/wallpapers/825/454/desktop-wallpaper-artur-library-of-drum-island-wano.jpg"
+                alt="Forest"
+                width="650"
+                height="450"
+              />
+              <div class="desc">
+                WANO <br />
+                60 até ~
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <br />
+      <!--<section class="inf">
+        <h2>Informações da Empresa de Animação</h2>
+        <p>
+          A One Piece é produzida pela Toei Animation, uma empresa de animação
+          japonesa fundada em 1948.
+        </p>
+        <p>
+          A Toei Animation já produziu outras séries populares de anime, como
+          Dragon Ball, Sailor Moon e Digimon.
+        </p>
+        <p>
+          A empresa também é conhecida por seus trabalhos em animação para
+          filmes e programas de TV, bem como em merchandising e produção de
+          música.
+        </p>
+      </section>
+      -->
+      <section class="curiosidades">
+        <span>
+          <div class="titulo">
+            <span> Curiosidades</span>
+          </div>
+        </span>
+
+        <ul>
+          <li>
+            A série One Piece é baseada em um mangá de mesmo nome criado por
+            Eiichiro Oda, que começou a ser publicado em 1997 e ainda está em
+            andamento.
+          </li>
+          <li>
+            O anime One Piece estreou em 1999 e atualmente conta com mais de
+            1000 episódios.
+          </li>
+          <li>
+            O protagonista da série, Monkey D. Luffy, tem o poder de esticar seu
+            corpo como se fosse de borracha, graças a uma fruta do diabo que ele
+            comeu.
+          </li>
+          <li>
+            A série é conhecida por seu humor, ação, aventura e pelo
+            desenvolvimento de personagens complexos.
+          </li>
+          <li>
+            One Piece tem uma grande base de fãs em todo o mundo, e já foi
+            adaptado para jogos de videogame, filmes, produtos de merchandising
+            e muito mais.
+          </li>
+        </ul>
+        <br />
+      </section>
+    </main>
+    <footer>
+      <p>&copy;ALLBLUE-Todos os direitos reservados</p>
+      <p>
+        Desenvolvedor - Romilson Monteiro
+        <a href="./abautme.html">Mais sobre min</a>
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
